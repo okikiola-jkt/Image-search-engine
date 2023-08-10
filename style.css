@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: blueviolet;
+    background-color: #16112c;
     color: azure;
   
 }
@@ -25,12 +25,10 @@ form{
     max-width: 600px;
     margin: auto;
     height: 80px;
-    background: grey;
+    background: #333760;
     display: flex;
     align-items: center;
-    border-radius: 8px;
-   
-
+    border-radius: 8px; 
 }
 
 form input {
@@ -41,8 +39,7 @@ form input {
     font-size: 18px;
     background: transparent;
     color: white;
-    padding: 0 30px;
-   
+    padding: 0 30px;  
 }
 
 form button {
@@ -58,6 +55,38 @@ form button {
     outline: 0;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
+    cursor: pointer;  
+}
+
+::placeholder{
+
+    color: white;
+    font-size: 18px;
+}
+
+#show-more-btn{
+    background: red;
+    color: white;
+    border: 0;
+    outline: 0;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin: 10px auto 100px;
     cursor: pointer;
-   
+    display: none;       
+}
+
+#search-result{
+
+    width: 80%;
+    margin: 100px auto 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+}
+
+#search-result img{
+    width: 100%;
+    height: 230px;
+    border-radius: 5px;
 }
